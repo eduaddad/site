@@ -24,54 +24,6 @@
       </head>
 
       <body>
-	      
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBX3zRQWlQRnw2fRhlLrmfWg3aehUMlnqg",
-    authDomain: "eduardo-addad-de-oliveira.firebaseapp.com",
-    databaseURL: "https://eduardo-addad-de-oliveira.firebaseio.com",
-    projectId: "eduardo-addad-de-oliveira",
-    storageBucket: "eduardo-addad-de-oliveira.appspot.com",
-    messagingSenderId: "789656969348",
-    appId: "1:789656969348:web:0f7114cdf594b9304fe2d1",
-    measurementId: "G-QRWNNVN5PL"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-	
-// Retrieve Firebase Messaging object.
-const messaging = firebase.messaging();
-	
-// Add the public key generated from the console here.
-messaging.usePublicVapidKey("BKValmUzfW_uVCrKFhwX8IQZ1vezovNEi5_HjHoJFCP5J9s0ktzLYmIJ7yaXn1AJFHAQvRt4R8AV50mXoTqEiEs");
-
-// Callback fired if Instance ID token is updated.
-messaging.onTokenRefresh(() => {
-  messaging.getToken().then((refreshedToken) => {
-    console.log('Token refreshed.');
-    // Indicate that the new Instance ID token has not yet been sent to the
-    // app server.
-    setTokenSentToServer(false);
-    // Send Instance ID token to app server.
-    sendTokenToServer(refreshedToken);
-    // ...
-  }).catch((err) => {
-    console.log('Unable to retrieve refreshed token ', err);
-    showToken('Unable to retrieve refreshed token ', err);
-  });
-});
-	
-</script>
-	      
       <div class="navbar">
   <a href="/">Início</a>
   <a href="/contato">Contato</a>
