@@ -26,14 +26,28 @@
       <body>
 	      
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.19.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBX3zRQWlQRnw2fRhlLrmfWg3aehUMlnqg",
+    authDomain: "eduardo-addad-de-oliveira.firebaseapp.com",
+    databaseURL: "https://eduardo-addad-de-oliveira.firebaseio.com",
+    projectId: "eduardo-addad-de-oliveira",
+    storageBucket: "eduardo-addad-de-oliveira.appspot.com",
+    messagingSenderId: "789656969348",
+    appId: "1:789656969348:web:0f7114cdf594b9304fe2d1",
+    measurementId: "G-QRWNNVN5PL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 	      
       <div class="navbar">
   <a href="/">Início</a>
