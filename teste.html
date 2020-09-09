@@ -47,6 +47,29 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+	
+// Retrieve Firebase Messaging object.
+const messaging = firebase.messaging();
+	
+// Add the public key generated from the console here.
+messaging.usePublicVapidKey("BKValmUzfW_uVCrKFhwX8IQZ1vezovNEi5_HjHoJFCP5J9s0ktzLYmIJ7yaXn1AJFHAQvRt4R8AV50mXoTqEiEs");
+
+// Callback fired if Instance ID token is updated.
+messaging.onTokenRefresh(() => {
+  messaging.getToken().then((refreshedToken) => {
+    console.log('Token refreshed.');
+    // Indicate that the new Instance ID token has not yet been sent to the
+    // app server.
+    setTokenSentToServer(false);
+    // Send Instance ID token to app server.
+    sendTokenToServer(refreshedToken);
+    // ...
+  }).catch((err) => {
+    console.log('Unable to retrieve refreshed token ', err);
+    showToken('Unable to retrieve refreshed token ', err);
+  });
+});
+	
 </script>
 	      
       <div class="navbar">
