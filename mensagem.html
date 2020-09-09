@@ -69,14 +69,29 @@ limitations under the License.
   </main>
 </div>
 
-<!-- Import and configure the Firebase SDK -->
-<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
-<!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
-<script src="/__/firebase/7.18.0/firebase-app.js"></script>
-<script src="/__/firebase/7.18.0/firebase-messaging.js"></script>
-<script src="/__/firebase/init.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
 
 <script>
+    // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBX3zRQWlQRnw2fRhlLrmfWg3aehUMlnqg",
+    authDomain: "eduardo-addad-de-oliveira.firebaseapp.com",
+    databaseURL: "https://eduardo-addad-de-oliveira.firebaseio.com",
+    projectId: "eduardo-addad-de-oliveira",
+    storageBucket: "eduardo-addad-de-oliveira.appspot.com",
+    messagingSenderId: "789656969348",
+    appId: "1:789656969348:web:0f7114cdf594b9304fe2d1",
+    measurementId: "G-QRWNNVN5PL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
   // [START get_messaging_object]
   // Retrieve Firebase Messaging object.
   const messaging = firebase.messaging();
