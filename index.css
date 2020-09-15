@@ -1,91 +1,127 @@
-<!DOCTYPE html>
-<!-- saved from url=(0032)https://www.eduardoaddad.com.br/ -->
-<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176591853-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+          body {
+            background-color: #eeebf2;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23d2cbdd' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+            padding: 0;
+            margin: 0;
+          }
 
-  gtag('config', 'UA-176591853-1');
-</script>
-<head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#2f3030">
-<meta name="description" content="Site pessoal do Eduardo">	
-  <link rel="stylesheet" href="css/fontawesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-	        <title>Eduardo Addad de Oliveira | Início</title>
-	
-<link href="teste.css" rel="stylesheet">		
-<link rel="stylesheet" href="style.css">
+            .edgy {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100vh;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            text-align: center;
+            line-height: 1.3;
+          }
 
-</head>
-<body>
+          .edgy .image {
+            margin: 0 auto;
+            
+                  width: 200px;
+                  height: 200px;
+                  -webkit-transform: rotate(-90deg);
+                  -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+          }
 
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/index.html">
-						<img src="/logocerto.png"
-							alt="Eduardo Addad de Oliveira" height="27" width="40">
-					</a>
+          .item + .item {
+            margin-bottom: 1rem;
+          }
 
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li class="desactive"><a href="/index.html">Início</a></li>
-						<li class="dropdown">
-						<li><a href="/contato">Contato</a></li>
-						</span></a>
-						<ul class="dropdown-menu">
-							<li><a href="/contato">Contato</a></li>
-							<li><a href="/en">English</a></li>
-						</ul>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/en"><span class="glyphicon glyphicon-globe"></span> English</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-  
-</div>
-	      
-        <div class="edgy">
-          <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a
-              href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
-              href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-          </div> -->
-          <img class="item image" src="logo3.png">
-          <div class="item">
-            <p class="title">Site do Eduardo</p>
-          </div>
-          <div class="item">
-            <p>Tradutor, Editor de wikis, Programador</p>
-          </div>
-        </div>
-        
- <!-- Add font awesome icons -->
-<a href="https://twitter.com/eduardoaddad" class="fa fa-twitter"></a>
-<a href="https://www.linkedin.com/in/eduardo-addad-de-oliveira/" class="fa fa-linkedin"></a>
-<a href="https://www.instagram.com/eduardoaddad/" class="fa fa-instagram"></a>
-<a href="https://github.com/eduaddad" class="fa fa-github"></a>
-    
-		<footer>
-<footer> <small>&copy; Copyright © 2020 Eduardo Addad de Oliveira.</small>
-		</footer>
-	</body>
-</html>
+          .edgy .title {
+            font-family: "Poppins", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            margin: 0 auto;
+            text-transform: uppercase;
+            color: #000;
+            max-width: 400px;
+          }
 
+          .edgy p {
+            font-family: "Poppins", sans-serif;
+            color: #999fa5;
+            font-weight: 300;
+            margin: 0 auto;
+            max-width: 400px;
+          }
+
+          .attribution-container {
+            font-family: "Poppins", sans-serif;
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100vw;
+          }
+
+          .attribution a {
+            color: #00b1eb
+          }
+            .edgy {
+              padding-left: 10px;
+              padding-right: 10px;
+           }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+		
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
