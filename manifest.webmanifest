@@ -1,0 +1,27 @@
+{
+  "name": "eduardoaddad.com.br",
+  "short_name": "eduardoaddad.com.br",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#3740ff",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/foto192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/foto512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "English",
+      "url": "/en/"
+    }
+  ]
+}
