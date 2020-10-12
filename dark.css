@@ -14,3 +14,9 @@
 img[src*=".svg"] {
   filter: var(--icon-filter);
 }
+
+--image-filter: grayscale(50%);
+
+img:not([src*=".svg"]) {
+  filter: var(--image-filter);
+}
