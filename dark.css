@@ -7,3 +7,10 @@
   --accent-background-color: rgb(0, 188, 212);
   --accent-color: rgb(5, 5, 5);
 }
+
+--icon-filter: invert(100%);
+--icon-filter_hover: invert(40%);
+
+img[src*=".svg"] {
+  filter: var(--icon-filter);
+}
