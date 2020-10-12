@@ -106,7 +106,6 @@
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -124,8 +123,4 @@
 .navbar a:hover {
   background: #ddd;
   color: black;
-}
-
-footer {
-  display: block;
 }
