@@ -56,3 +56,7 @@ body {
   color: var(--color);
   background-color: var(--background-color);
 }
+
+img[src*=".svg"]:hover {
+  filter: var(--icon-filter_hover);
+}
