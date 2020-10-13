@@ -21,7 +21,10 @@
   "shortcuts": [
     {
       "name": "English",
+      "short_name": "EN",
+      "description": "The English language site",
       "url": "/en"
+      "icons": [{ "src": "/globe.png", "sizes": "48x48" }]
     }
   ]
 }
