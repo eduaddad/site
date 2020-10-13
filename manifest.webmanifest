@@ -28,7 +28,7 @@
       "short_name": "EN",
       "description": "The English language site",
       "url": "/en",
-      "icons": [{ "src": "/globe.png", "sizes": "48x48" }]
+      "icons": [{ "src": "/globe (1).png", "sizes": "72x72" }]
     }
   ]
 }
