@@ -1,8 +1,12 @@
 {
   "name": "Eduardo Addad de Oliveira",
   "short_name": "Eduardo Addad",
+  "lang": "pt-br",
+  "description": "Aplicativo do Eduardo Addad de Oliveira.",
+  "categories": ["pessoal", "educação", "aprendizagem"],
   "start_url": "/",
   "display": "standalone",
+  "scope": "/",
   "orientation": "portrait",
   "background_color": "#3740ff",
   "theme_color": "#2f3030",
@@ -21,7 +25,10 @@
   "shortcuts": [
     {
       "name": "English",
-      "url": "/en"
+      "short_name": "EN",
+      "description": "The English language site",
+      "url": "/en",
+      "icons": [{ "src": "/globo1.png", "sizes": "72x72" }]
     }
   ]
 }
