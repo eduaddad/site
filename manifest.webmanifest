@@ -1,6 +1,7 @@
 {
   "name": "Eduardo Addad de Oliveira",
-  "short_name": "Eduardoaddad",
+  "short_name": "Eduardo Addad",
+  "description": "Aplicativo do Eduardo Addad de Oliveira.",
   "start_url": "/",
   "display": "standalone",
   "scope": "/",
