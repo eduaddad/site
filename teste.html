@@ -154,7 +154,7 @@
     // [START get_token]
     // Get registration token. Initially this makes a network call, once retrieved
     // subsequent calls to getToken will return from cache.
-    messaging.getToken({vapidKey: '<YOUR_PUBLIC_VAPID_KEY_HERE>'}).then((currentToken) => {
+    messaging.getToken({vapidKey: 'BAr5cYgw-wnBuiYMLnJ3PDqt9cYGgklNw2zvxgRUEeHaXrU6UshiGvZN37DXOvOnYGr8bOl_pxnhM_ibsm0f30s'}).then((currentToken) => {
       if (currentToken) {
         sendTokenToServer(currentToken);
         updateUIForPushEnabled(currentToken);
