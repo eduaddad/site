@@ -30,5 +30,12 @@
       "url": "/en",
       "icons": [{ "src": "/globo1.png", "sizes": "72x72" }]
     }
+        {
+      "name": "Spanish",
+      "short_name": "ES",
+      "description": "El sitio en español",
+      "url": "/es",
+      "icons": [{ "src": "/globo1.png", "sizes": "72x72" }]
+    }
   ]
 }
