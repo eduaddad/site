@@ -31,7 +31,7 @@
       "icons": [{ "src": "/globo1.png", "sizes": "72x72" }]
     },
     {
-      "name": "Spanish",
+      "name": "Español",
       "short_name": "ES",
       "description": "El sitio en español",
       "url": "/es",
